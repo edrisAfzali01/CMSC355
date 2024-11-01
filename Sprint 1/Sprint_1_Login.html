@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel ="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class = 'container'>
+        
+    <div class = 'sign-in-container'>
+        <h2 id = 'hed'>Sign In</h2>
+        <form id = 'login-form' onsubmit="return validUser()">
+        <p id = error style="color: red;">Invalid Username / Password! </p>
+        <p id = success style="color: green;">Logging in...</p>
+        <label for: 'username' id = utex > Username </label> <br>
+        <div class = 'input-icon'>
+
+        <i class = 'fa-solid fa-user'>   </i>
+         <input type = "text" id = 'input-field' placeholder = "Username" required>
+        </div>
+         
+        <br><br>
+        <label for: 'password' id ='ptex'>Password</label><br>
+        <div class = 'password-icon'>
+             <i class = 'fa-solid fa-lock' id = 'lock'></i> 
+                <input type = "password" id = 'pass-field' placeholder = "Password" style="color: black;" required>
+             <button id = 'eye-con' type ="button">
+                 <i class="fa fa-eye-slash" id = 'nosee'></i>
+             </button>
+        </div> <br><br>
+         <button id = 'submit' type ="submit">Sign In</button><br>
+        </form>
+
+    </div>
+    
+    <div class = 'welcome-doc'>
+        <h2></h2>
+        <div class = 'doc-header'>
+            <div class = 'run-icon'>
+            
+            <h2>Welcome to <span id ='bright'> DocDash </span>
+                <i class="fa-solid fa-person-running"></i>
+         </h2>
+            </div>
+            <p>Don't have an account?</p>
+        </div>
+        <div>
+        <button id = 'sign-up'>Sign Up</button>
+        </div>
+        
+    </div>
+    </div>
+
+   <script src = 'x.js'></script>
+    <script src = 'login.js'></script>
+</body>
+</html>

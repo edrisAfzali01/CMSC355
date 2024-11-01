@@ -1,0 +1,161 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(233, 229, 229, 0.842);
+    margin: 0;  /*centering stuff and setting up flex boxes*/
+}
+.container {
+    display: flex;
+    font-family: sans-serif;
+    width: 80vw; 
+    height: 80vh;
+    max-width: 800px; 
+    max-height: 400px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 12px rgba(0, 0, 0, 0.1) ; 
+}
+
+.sign-in-container, .welcome-doc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;/* displays ths content in type flex, with a default size factor, displays both boxes
+    columnally, and centers
+    the content within this flex box*/
+
+    border-radius: 10px;
+   
+}
+
+.sign-in-container {
+    background-color: white;
+}
+
+.welcome-doc {
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    color: white;
+    text-align: center; /*centers and formats the text in the flex box*/
+}
+#bright{ 
+color: #ffffff; 
+  text-shadow: 0 0 5px #ffffff, 0 0 10px; /*layers of shadows can add this fluorescent effect*/
+}
+#sign-up{ /* #signup and #submit are the two buttons, the styling here is self evident*/
+    width: 80px;
+    height: 40px;
+    border-radius: 20px; /*border radius lets round the corners on an otherwise rectangular button*/
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    border-color: white;
+    color: white;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+}
+#submit{
+    width: 265px;
+    height: 45px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    /* adding the shine class separate from the submit button lets us keep previous
+    stylization intact while modifying it with the animation. It's probably uglier to read
+    but it makes my life easier*/
+
+    position: relative; /*these two prevent the animation from "leaking" out of the border of the button*/
+    overflow: hidden;
+}
+
+#submit::before, #sign-up::before{
+    content: ''; /* we can put text in the animation: we dont want that here*/
+    position: absolute;
+    top: 0;
+    left: -75%; 
+    width: 70%;  /* how wide shine is*/
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /
+    transform: skewX(-20deg);
+    transition: transform 0.45s ease; 
+
+}
+#submit.shine::before, #sign-up.shine::before {
+    transform: translateX(150%) skewX(-20deg); 
+}
+
+.input-icon{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.input-icon input{
+    background-color: rgba(233, 229, 229, 0.842);
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.input-icon i{
+    position: absolute;
+    left:10px;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.password-icon{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.password-icon input{
+    background-color: rgba(233, 229, 229, 0.842);
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left:30px;
+    padding-right: 30px;
+
+}
+
+.password-icon #lock{
+    position: absolute;
+    left:10px;
+    color: rgba(0, 0, 0, 0.671);
+}
+.password-icon #eye-con{
+    position: relative;
+    right:40px;
+    margin-top: 2px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size:100%;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+
+
+
+#error{
+ display: none;
+}
+#success{
+    display: none;
+    font-family: sans-serif;
+}
+#hed{
+ font-family: sans-serif;
+}
+#ptex{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#utex{
+    font-family: sans-serif;
+    font-weight: bold;
+}
