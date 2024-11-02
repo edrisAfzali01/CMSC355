@@ -1,0 +1,155 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(233, 229, 229, 0.842);
+    font-family:sans-serif;
+    color:white;
+    
+}
+.reg-container{
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    padding: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    flex-direction: column;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.i-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    flex-direction: column;
+    
+}
+.main-icon{
+    margin-bottom: 5px;
+    font-size:200%;
+    color: white;
+    
+}
+.header{
+    margin: 0;
+    font-size:125%;
+}
+
+.first-last{
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    ::placeholder{
+        color: #b1b4b8;
+        font-family: sans-serif;
+    }
+    
+
+}
+#first, #last{
+    width:150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+.EHM{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    margin: 0;
+    ::placeholder{
+        color: #b1b4b8;
+        font-family: sans-serif;
+    }
+}
+#email,#home,#phone{
+    width: 310px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    
+}
+.passnconfirm{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ::placeholder{
+        color: #b1b4b8;
+        font-family: sans-serif;
+    }
+}
+#password,#confirm{
+    width:200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+.buttons{
+    display:flex;
+    position:relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+#submit{
+    width: 100px;
+    padding:10px;
+    border-radius: 20px;
+    color: #9cb4d8;
+    background-color: white;
+    font-family: sans-serif;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+#back{
+    width: 100px;
+    padding:10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #9cb4d8;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+#submit::before, #back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -70%;
+    width: 70%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-20deg);
+    transition: transform 0.45s ease;
+    
+}
+#submit::before{
+    background-color: #9cb4d8;
+    opacity: 50%;
+}
+
+/* Activate the shine on hover */
+#submit.shine::before, #back.shine::before {
+    transform: translateX(150%) skewX(-20deg);
+    
+}
