@@ -1,0 +1,179 @@
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family:sans-serif;
+   margin: 0;
+   color: rgba(255, 255, 255, 0.808);
+   /*essentially, the body is enforcing format to everything inside of it
+   such that it is centered, like in the prototype*/
+}
+.rating-container{
+    display: flex; /*flexy*/
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    width: 35vw;
+    min-width: fit-content;
+    min-height :fit-content;
+    flex-direction: column;
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 12px rgba(0, 0, 0, 0.1) ;
+    padding-top: 5vh;
+    margin-top: 5vh;
+    /* this div contains pretty much the entire relevant portion of the webpage*/
+    
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 90%;
+    position: relative;
+
+    /*text and icon guy*/
+   
+    
+}
+.running-guy{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top:0;
+    
+    
+}
+#guy{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vh;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #cdd5db;
+}
+.name-for-doctor{
+    display: flex;
+    text-align: center;
+}
+#feedback{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    min-width: fit-content;
+    min-height: fit-content;
+   
+}
+#feed-field{
+    border-radius: 5px;
+    height:100px;
+    width:50vh;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    resize:vertical;
+    background-color: rgba(248, 246, 246, 0.575);
+    border:none;
+    max-height: 200px;
+    min-height: fit-content;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    min-height: fit-content;
+    
+
+}
+#submit{
+    margin-right: 30px;
+    justify-content: center;
+    border-radius: 30px;
+    height:50px;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    border-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+
+    
+}
+#back{
+    height:50px;
+    width: 120px;
+    border-radius: 30px;
+    justify-content: center;
+    color: white;
+    border-color: white;
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    cursor: pointer;
+}
+.star{
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    cursor: pointer;
+    font-size: 35px;
+    color:rgb(255, 255, 255);
+}
+#charcount{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-content {
+    background: white;
+    color:rgb(14, 13, 13);
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+#close-prompt{
+    border-radius: 35px;
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+}
+#edit-prompt{
+    border-radius: 35px;
+    background: linear-gradient(90deg, #ebf4f5,#b5c6e0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 60px;    
+}
+#run2{
+    font-size:30px;
+}
+
+.STARS .star i {
+    cursor: pointer; 
+    
+}

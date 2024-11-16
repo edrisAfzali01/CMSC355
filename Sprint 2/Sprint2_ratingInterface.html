@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to us!</title>
+    <link rel="stylesheet" href="ratingStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class = 'rating-container'>
+        <div class = 'header'>
+        <h2 class = 'running-guy'><i class = 'fas fa-person-running'></i></h2>
+        
+        <h1>How was your experience?</h1>
+        </div>
+
+        <div class = 'image'>
+            <img src = 'https://www.stockvault.net/data/2015/09/01/177580/preview16.jpg'>
+        </div>
+        <div class = 'name-for-doctor' style="font-weight: bold;">
+            Dr. John Hopkins
+        </div>
+        <br>
+        <div class = 'STARS'>
+            <button class = 'star' data-value ='1'><i class="fa-regular fa-star"></i></button>
+            <button class = 'star' data-value ='2'><i class="fa-regular fa-star"></i></button>
+            <button class = 'star' data-value ='3'><i class="fa-regular fa-star"></i></button>
+            <button class = 'star' data-value ='4'><i class="fa-regular fa-star"></i></button>
+            <button class = 'star' data-value ='5'><i class="fa-regular fa-star"></i></button>
+        </div> 
+        <br>
+        <div class = 'form'>
+            <form id = 'feedback'>
+                Give us feedback: <br>
+                <div id = 'text'>
+                <textarea id = 'feed-field' maxlength="1000" required></textarea><br>
+                <span id = 'charcount' style="font-weight: 100;">1000</span>
+                 </div>
+                
+                <div class = 'buttons'>
+                 <button id = 'submit' type="submit">SUBMIT</button>
+                 <button id = 'back' type = 'button'>GO BACK</button>
+                </div>
+
+            </form>
+            <div id = 'thanks' class = 'modal'>
+                <div class ='prompt-content'>
+                    <i class = 'fas fa-person-running' id = 'run2'></i>
+                    <p>Thank you, your review has been submitted!</p>
+                    <button id ='edit-prompt'>Edit</button>
+                    <button id = 'close-prompt'>Close</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src = 'Sprint2_ratingFunc.js'></script>
+</body>
+</html>
